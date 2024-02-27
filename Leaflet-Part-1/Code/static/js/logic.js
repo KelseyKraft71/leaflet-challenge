@@ -1,9 +1,5 @@
 const url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-// create function to alter the marker size
-function markerSize(magnitude) {
-    return magnitude * 30;
-  }
 
 // Get the data with d3
 d3.json(url).then(function(data) {
